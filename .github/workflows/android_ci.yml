@@ -21,6 +21,8 @@ jobs:
     # Cài đặt Fastlane
     - run: sudo gem install fastlane
 
+    - run: cd android
+
     # Chạy Fastlane để build APK
     - run: fastlane android build
 
