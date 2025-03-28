@@ -19,7 +19,7 @@ jobs:
     - run: flutter pub get
 
     # Cài đặt Fastlane
-    - run: gem install fastlane
+    - run: sudo gem install fastlane
 
     # Chạy Fastlane để build APK
     - run: fastlane android build
