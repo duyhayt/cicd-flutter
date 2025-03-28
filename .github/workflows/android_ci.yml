@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     # Checkout mã nguồn
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
 
     # Cài đặt Flutter
     - uses: subosito/flutter-action@v2
@@ -25,7 +25,7 @@ jobs:
     - run: fastlane android build
 
     # (Tùy chọn) Lưu APK làm artifact để tải về kiểm tra
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: app-release.apk
         path: build/app/outputs/flutter-apk/app-release.apk
